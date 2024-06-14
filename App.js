@@ -8,8 +8,8 @@ export default function App() {
   console.log(useDeviceOrientation());
 
   return (
-    // <WelcomeScreen/>
-    <ViewImageScreen/>
+    <WelcomeScreen/>
+    // <ViewImageScreen/>
   );
 }
 

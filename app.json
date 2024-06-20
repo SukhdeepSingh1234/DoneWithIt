@@ -12,7 +12,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sukhdeepsingh1234.DoneWithIt"
     },
     "android": {
       "adaptiveIcon": {

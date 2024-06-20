@@ -1,20 +1,33 @@
 
-import { StyleSheet,useWindowDimensions, Text, View, SafeAreaView,StatusBar, Platform} from 'react-native';
+import { StyleSheet,useWindowDimensions, Text, View, SafeAreaView,StatusBar, Platform, Button, Image} from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import AccountScreen from './app/screens/AccountScreen';
-import MessagesScreen from './app/screens/ListingsScreen';
-import WelcomeScreen from './app/screens/WelcomeScreen';
-import ListingsScreen from './app/screens/ListingsScreen';
-import ViewImageScreen from './app/screens/ViewImageScreen';
+
+import { useState } from 'react';
+import Screen from './app/components/Screen';
+
+
+import ImageInput from './app/components/ImageInput';
+import ImageInputList from './app/components/ImageInputList';
+import ListingEditScreen from './app/screens/ListingEditScreen';
 export default function App() {
+  
 
+  const [images, setImages] = useState([]);
 
+  
+  
   return (
+    
+
     <GestureHandlerRootView style={{ flex: 1 }}>
 
-    {/* <AccountScreen/> */}
-    {/* <MessagesScreen/> */}
-     <WelcomeScreen/>
+    
+     <Screen>  
+         <ListingEditScreen/>
+     </Screen>
+   
+    
+    
 
 
   </GestureHandlerRootView>
